@@ -11,8 +11,12 @@ Rails.application.configure do
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = false
+  # Next line is set true by Aditya Srivastava 
+  config.action_controller.perform_caching = true
 
+  # Next line is added by Aditya Srivastava
+  #config.action_controller.page_cache_directory = Rails.public_path + "/cache"
+#  config.active_record.observers = :contact_observer
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 

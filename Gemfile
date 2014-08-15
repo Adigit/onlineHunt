@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ gem 'mysql2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
@@ -29,7 +29,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
-  gem 'mysql2'
 end
 
 group :production do 
